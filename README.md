@@ -1,4 +1,4 @@
-# Trabajo Practico Obligatorio - Sistema de Facturación
+# Trabajo Práctico Obligatorio - Sistema de Facturación
 **Ingeniería de Datos II - UADE (1er Cuatrimestre 2026)**
 
 ## Descipción del Trabajo
