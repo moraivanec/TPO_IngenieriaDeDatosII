@@ -8,8 +8,8 @@ El sistema controla el stock de productos, calcula el monto total de las factura
 ## Base de Datos Relacional (Implementada)
 - MySQL
 
-## Base de Datos No relacional (Próxima Entrega)
-- A definir
+## Base de Datos No relacional (Implementada)
+- MongoDB
 
 ## Integrantes
 - Ivanec Mora Amalia
