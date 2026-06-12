@@ -1,0 +1,3 @@
+- Mostrar cada teléfono junto con los datos del cliente.
+
+db.clientes.find();

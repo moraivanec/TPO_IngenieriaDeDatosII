@@ -1,0 +1,8 @@
+- Obtener el/los teléfono/s y el número de cliente del cliente con nombre “Jacob” y apellido
+“Cooper”.
+
+
+db.clientes.find(
+  { nombre: "Jacob", apellido: "Cooper" },
+  { _id: 0, nro_cliente: 1, telefonos: 1 }
+).pretty()

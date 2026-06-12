@@ -1,0 +1,14 @@
+- Devolver todos los clientes, con la cantidad de facturas que tienen registradas (si no tienen
+considerar cantidad en 0)
+
+db.clientes.find(
+  {},
+  {
+    _id: 0,
+    nro_cliente: 1,
+    nombre: 1
+  }
+).pretty()
+
+
+-> Como los datos de clientes están en MongoDB y las facturas están en MySQL, primero obtenemos desde MySQL la cantidad de facturas registradas por cada cliente agrupando por nro_cliente, y después consultamos los clientes en MongoDB relacionando cada cliente con su cantidad de facturas con el campo nro_cliente. Si un cliente no aparece en el resultado de MySQL, es porque no tiene facturas registradas.
