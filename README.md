@@ -29,6 +29,8 @@ Elegimos **MySQL** para almacenar productos, las facturas y los detalles de las 
 
 Por otro lado, usamos **MongoDB** para guardar clientes junto con sus teléfonos. Decidimos hacer esto porque un cliente puede tener uno o varios números de teléfono, y en MongoDB esta información se puede almacenar dentro del mismo documento del cliente. Así evitamos separar los teléfonos en otra tabla.
 
+De esta forma, usamos cada base de datos para lo que mejor se adapta. MySQL nos sirve para la parte más ordenada y estructurada del sistema y MongoDB nos es más comodo para guardar los clientes con sus teléfonos dentro del mismo documento, sin tener que dividir esta información en varias tablas.
+
 ## Integrantes
 - Ivanec Mora Amalia
 - Legajo: 1179661
