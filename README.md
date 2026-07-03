@@ -18,7 +18,7 @@ Tablas implementadas:
 - "e01_factura"
 - "e01_detalle_factura"
 
-###MongoDB
+### MongoDB
 Usamos MongoDB para almacenar la información de los clientes con sus teléfonos, donde cada cliente se guarda como un documento y sus teléfonos se almacenan dentro de un arreglo en el mismo documento.
 
 Colección implementada:
