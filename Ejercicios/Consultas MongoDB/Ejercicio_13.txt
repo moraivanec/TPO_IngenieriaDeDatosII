@@ -1,0 +1,55 @@
+- Implementar la funcionalidad que permita crear nuevos clientes, eliminar y modificar los ya existentes
+
+-> Crear un nuevo cliente
+
+db.clientes.insertOne({
+  nro_cliente:101,
+  nombre: "Luka",
+  apellido: "Peralta",
+  dirección: "Av. Bunge 443",
+  activo: 1,
+  teléfonos: [
+    {
+      codigo_area = 2267,
+      nro_telefono = 123498,
+      tipo: "M"
+    }
+  ]
+});
+
+-> Modificar un cliente existente
+
+db.clientes.updateOne (
+  { nro_cliente: 101 },
+  {
+    $set: {
+      nombre: "Luka",
+      apellido: "Peralta",
+      dirección: "Av. Shaw 628",
+      activo: 1
+    }
+  }
+);
+
+-> Agregar un nuevo teléfono a un cliente existente
+
+db.clientes.updateOne(
+  { nro_cliente: 101 },
+  {
+    $push: {
+       teléfonos: {
+         codigo_area: 2254,
+         nro_telefono: 657483,
+         tipo: "F"
+       }
+    }
+ }
+);
+
+-> Eliminar un cliente existente
+
+db.clientes.deleteOne({
+  nro_cliente: 101
+});
+
+   
